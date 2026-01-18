@@ -3,12 +3,334 @@
 <head>
   <title>My first Vue page</title>
     <link rel="stylesheet" href="css/style.css?version=0.1">
+    <link rel="stylesheet" href="css/2style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="nav-title">My Personal Profile</h1>
+        </div>
+    </nav>
 
-<h1>Vue Example</h1>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tab Bar (Floating Search-like Bar) -->
+            <div class="tab-bar">
+                <button class="tab-button active" data-tab="about">About Me</button>
+                <button class="tab-button" data-tab="education">Education</button>
+                <button class="tab-button" data-tab="course">Course</button>
+                <button class="tab-button" data-tab="experience">IT Experience</button>
+                <button class="tab-button" data-tab="hobbies">Hobbies</button>
+                <button class="tab-button" data-tab="goals">Goals</button>
+                <button class="tab-button" data-tab="gallery">Picture Gallery</button>
+                <button class="tab-button" data-tab="resources">Resources</button>
+            </div>
 
-<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+            <!-- Content Sections -->
+            <div class="content-container">
+                <!-- About Me Section -->
+                <div id="about" class="content-section active">
+                    <div class="card">
+                        <h2 class="section-title">All About Wilte V. Dela Cruz</h2>
+                        <p class="about-text">
+                            Hello! I'm Wilte V. Dela Cruz, a passionate and driven individual with a strong interest 
+                            in information technology and web development. I am dedicated to continuous learning and 
+                            personal growth, always seeking new challenges and opportunities to expand my knowledge. 
+                            With a creative mindset and analytical approach, I strive to make meaningful contributions 
+                            in everything I do. I believe in the power of technology to transform ideas into reality, 
+                            and I'm committed to developing my skills to become a proficient IT professional. Outside 
+                            of my academic pursuits, I enjoy exploring new technologies, connecting with like-minded 
+                            individuals, and working on projects that challenge me to think differently.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div id="education" class="content-section">
+                    <div class="card">
+                        <h2 class="section-title">Educational Background</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>College</h3>
+                                    <p class="institution">Asia Pacific College</p>
+                                    <p class="course">Bachelor of Science in Information Technology</p>
+                                    <p class="years">2024 - 2028</p>
+                                    <p class="description">Currently pursuing a degree in Information Technology.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Senior High School</h3>
+                                    <p class="institution">Mataas na Paaralang Neptali A. Gonzales</p>
+                                    <p class="course">Science, Technology, Engineering and Mathematics (STEM)</p>
+                                    <p class="years">2022 - 2024</p>
+                                    <p class="description">Completed senior high school with a focus on STEM subjects, building a strong foundation in mathematics and science.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Elementary</h3>
+                                    <p class="institution">Plainview Elementary School</p>
+                                    <p class="years">2012 - 2018</p>
+                                    <p class="description">Completed basic education with honors, developing strong academic fundamentals and critical thinking skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Section -->
+                <div id="course" class="content-section">
+                    <div class="card">
+                        <h2 class="section-title">Courses & Subjects</h2>
+                        <div class="grid">
+                            <div class="course-card">
+                                <h3>Programming Concepts and Logic</h3>
+                                <p>Learning basic programming principles and logical problem-solving.</p>
+                                <span class="badge badge-completed">Completed</span>
+                            </div>
+                            <div class="course-card">
+                                <h3>Database Management Systems 2</h3>
+                                <p>SQL, database design, normalization, and query optimization</p>
+                                <span class="badge badge-progress">In Progress</span>
+                            </div>
+                            <div class="course-card">
+                                <h3>Information Systems Security</h3>
+                                <p>Protecting systems and data from threats through security controls and policies.</p>
+                                <span class="badge badge-completed">Completed</span>
+                            </div>
+                            <div class="course-card">
+                                <h3>Data Structures and Algorithms</h3>
+                                <p>Algorithm analysis, sorting, searching, and data structure implementation</p>
+                                <span class="badge badge-completed">Completed</span>
+                            </div>
+                            <div class="course-card">
+                                <h3>Network and System Administration</h3>
+                                <p>Computer networking, system configuration, and security fundamentals</p>
+                                <span class="badge badge-completed">Completed</span>
+                            </div>
+                            <div class="course-card">
+                                <h3>Web Programming</h3>
+                                <p>Designing and developing websites and web applications using front-end and back-end technologies</p>
+                                <span class="badge badge-progress">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IT Experience Section -->
+                <div id="experience" class="content-section">
+                    <div class="card">
+                        <h2 class="section-title">IT Experience & Skills</h2>
+                        <div class="grid">
+                            <div class="experience-card">
+                                <div class="icon-box icon-code">💻</div>
+                                <h3>Front-End Development</h3>
+                                <p>Developed responsive websites using HTML, CSS, and JavaScript.</p>
+                                <div class="skills">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="experience-card">
+                                <div class="icon-box icon-database">🗄️</div>
+                                <h3>Database Management</h3>
+                                <p>Worked with relational databases, designed schemas, and implemented queries for various projects.</p>
+                                <div class="skills">
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">Database Design</span>
+                                    <span class="skill-tag">Query Optimization</span>
+                                </div>
+                            </div>
+                            <div class="experience-card">
+                                <div class="icon-box icon-laptop">💼</div>
+                                <h3>Programming Projects</h3>
+                                <p>Created multiple projects including desktop applications and web apps..</p>
+                                <div class="skills">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">GitHub</span>
+                                </div>
+                            </div>
+                            <div class="experience-card">
+                                <div class="icon-box icon-design">🎨</div>
+                                <h3>Web Design</h3>
+                                <p>Designed user interfaces with focus on user experience and modern design principles.</p>
+                                <div class="skills">
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">UI/UX Design</span>
+                                    <span class="skill-tag">Responsive Design</span>
+                                    <span class="skill-tag">Wireframing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobbies Section -->
+                <div id="hobbies" class="content-section">
+                    <div class="card">
+                        <h2 class="section-title">Hobbies & Interests</h2>
+                        <div class="grid-3">
+                            <div class="hobby-card">
+                                <div class="hobby-icon">📺</div>
+                                <h3>Watching Series</h3>
+                                <p>Enjoys watching anime or Kdrama series.</p>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="hobby-icon">🎮</div>
+                                <h3>Gaming</h3>
+                                <p>Playing strategy and adventure games to relax and challenge problem-solving skills.</p>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="hobby-icon">🎵</div>
+                                <h3>Music</h3>
+                                <p>Listening to various genres of music and exploring new artists.</p>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="hobby-icon">😴</div>
+                                <h3>Sleeping</h3>
+                                <p>Regain energy after sleeping late.</p>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="hobby-icon">💪</div>
+                                <h3>Fitness</h3>
+                                <p>Interested to go into fitness but still an interest, not yet turning it into hobby</p>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="hobby-icon">🎨</div>
+                                <h3>Drawing/Painting</h3>
+                                <p>though it's a lost hobby, I'm still interested with drawing/painting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goals Section -->
+                <div id="goals" class="content-section">
+                    <div class="card">
+                        <h2 class="section-title">My Goals & Aspirations</h2>
+                        <div class="goals-grid">
+                            <div class="goals-box goals-short">
+                                <h3>🎯 Short-term Goals</h3>
+                                <ul>
+                                    <li>Survive College</li>
+                                    <li>Complete all coursework</li>
+                                    <li>Build a portfolio of personal projects</li>
+                                    <li>Learn cloud computing platforms (AWS, Azure)</li>
+                                </ul>
+                            </div>
+                            <div class="goals-box goals-long">
+                                <h3>🚀 Long-term Goals</h3>
+                                <ul>
+                                    <li>Be financially stable</li>
+                                    <li>Have a fulfilling life and live with purpose</li>
+                                    <li>Work for a tech company</li>
+                                    <li>Continue learning emerging technologies and trends</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mission-box">
+                            <h3>Personal Mission</h3>
+                            <p>
+                                To continuously grow as an IT professional, leverage technology to solve real-world problems, 
+                                and make a positive impact through innovation and creativity. I am committed to lifelong 
+                                learning and aspire to inspire others in their tech journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Picture Gallery Section -->
+                <div id="gallery" class="content-section">
+                    <div class="card">
+                        <h2 class="section-title">Picture Gallery</h2>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920/keyart/GRMG8ZQZR-backdrop_wide" alt="One Piece">
+                                <div class="gallery-overlay">
+                                    <p>One Piece</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://m.media-amazon.com/images/I/81I2gVU9IEL.png" alt="gaming">
+                                <div class="gallery-overlay">
+                                    <p>Gaming</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://www.nme.com/wp-content/uploads/2024/08/aespa-karina-prada-ambassador-280824-696x442.jpg" alt="Aespa bias">
+                                <div class="gallery-overlay">
+                                    <p>Karina/Yu Jimin</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.pinimg.com/736x/1f/c7/ba/1fc7ba7bf491d2b99a8633debb44f7ca.jpg" alt="New Jeans bias">
+                                <div class="gallery-overlay">
+                                    <p>Hanni Pham</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://embed.pixiv.net/spotlight.php?id=8181&lang=en" alt="Hunter X Hunter">
+                                <div class="gallery-overlay">
+                                    <p>Hunter X Hunter</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.pinimg.com/736x/ba/6d/59/ba6d594efea4742143ccfde882e7400e.jpg" alt="ML Hero">
+                                <div class="gallery-overlay">
+                                    <p>Aamon pfp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Section -->
+                <div id="resources" class="content-section">
+                    <div class="card">
+                        <h2 class="section-title">Resources & Tools</h2>
+                        <p class="subtitle">Essential tools and platforms I use for learning and development</p>
+                        <div class="resources-grid">
+                            <div class="resource-card resource-chatgpt">
+                                <div class="resource-icon">🤖</div>
+                                <h3>ChatGPT</h3>
+                                <p>AI-powered assistant for coding help and problem-solving</p>
+                            </div>
+                            <div class="resource-card resource-gemini">
+                                <div class="resource-icon">✨</div>
+                                <h3>Gemini</h3>
+                                <p>Google AI for research and learning assistance</p>
+                            </div>
+                            <div class="resource-card resource-figma">
+                                <div class="resource-icon">🎨</div>
+                                <h3>Figma</h3>
+                                <p>Design and prototyping tool for UI/UX projects</p>
+                            </div>
+                            <div class="resource-card resource-w3schools">
+                                <div class="resource-icon">📖</div>
+                                <h3>W3Schools</h3>
+                                <p>Web development tutorials and references</p>
+                            </div>
+                            <div class="resource-card resource-github">
+                                <div class="resource-icon">🐙</div>
+                                <h3>GitHub</h3>
+                                <p>Version control and code collaboration platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
 
 <div id="app">
   {{ message }}
