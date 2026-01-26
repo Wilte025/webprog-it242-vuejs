@@ -14,6 +14,6 @@
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    background-color: lightgreen;
+    background-color: Mango;
   }
   </style>
